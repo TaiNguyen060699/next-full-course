@@ -1,4 +1,5 @@
 import './globals.css'
+import Navbar from './components/Navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -18,10 +19,8 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       {/* <head /> */}
-      <body>
-        <nav>
-          <h1>My Navbar</h1>
-        </nav>
+      <body className="bg-slate-800">
+        <Navbar />
         {children}
       </body>
     </html>
